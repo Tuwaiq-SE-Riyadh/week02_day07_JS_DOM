@@ -7,19 +7,26 @@
     <title>Document</title>
 
 </head>
-<body>
+<body onload="onloadFunction()">
      <h1 id="heading"> Web Development Essentials</h1>
     <p id="paragraph">W02D02-Lab in JavaScript course is about Scripting and Event Handling DOM!</p>
     <form id="form">
         <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" value=""><br>
+        <input type="text" id="name" name="name" value="" onkeydown="pressedOnInputs()"><br>
         <label for="course">Course:</label><br>
-        <input type="text" id="course" name="course" value=""><br><br>
+        <input type="text" id="course" name="course" value="" onkeydown="pressedOnInputs()"><br><br>
         <input type="submit" value="Submit">
     </form>
     <br>    
-    <img src="http://www.javatpoint.com/images/javascript/javascript_logo.png">
-    
-    <script type="text/javascript" src="task1.js"></script>
+    <img id="demo" oncontextmenu="rightClicks()" src="http://www.javatpoint.com/images/javascript/javascript_logo.png">
+    <br>
+        <button onclick="changeSizeOfHeading()">Change the size of a heading</button>
+        <button onclick="changeFontOfparagraph()">Change the font style of a paragraph</button>
+        <button onclick="highlightParagraph()">Highlight a paragraph</button>
+        <button onclick="hideAnImage()">Hide An Image</button>
+        <button onclick="alternateBetweenTwoImages()">Alternate between two images</button>
+        
+        <script type="text/javascript" src="task1.js"></script>
+
 </body>
 </html>
